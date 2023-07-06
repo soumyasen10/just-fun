@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(246, 211, 211);
+}
+.second{
+    border: 2px solid black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    min-height: 85vh;
+    min-height: 30vw;
+    background-color: #fff;
+}
+.one{
+    min-height: calc(100% / 3)vh;
+    width: 100%;
+    display: flex;
+}
+.two{
+    min-height: calc(100% / 3)vh;
+    min-width: 100vw;
+    display: flex;
+
+}
+.three{
+    min-height: calc(100% / 3)vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: space-around;
+
+}
+.one>.one-img{
+    padding: 30px 20px;
+}
+.one>.two-img{
+    padding: 30px 20px;
+}
+.one>.two-img>a>img{
+    position: absolute;
+    top: 50px;
+    width: 200px;
+}
+.fdiv{
+    height: 100%;
+    width: 55%;
+}
+.sdiv{
+    height: 100%;
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sdiv>img{
+    height: 90%;
+    
+}
+.fdiv>.zayan{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.fdiv>.soumya>img{
+    height: 100px;
+    margin-top: 4px;
+}
+.fdiv>.soumya{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ione>img{
+    height: 160px;
+    position: relative;
+    top: 8px;
+    left: 15px;
+
+}
+.itwo{
+    width: 100%;
+    height: 100%;
+}
+.itwo>img{
+    position: relative;
+    top: 20px;
+    margin-left: 35px ;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+
+}
+
+@media (max-width:500px) {
+    .one{
+        padding: 5px;
+    }
+    .two{
+        padding: 5px;
+        gap: 15px;
+    }
+    .three{
+        padding: 5px;
+    }
+}
